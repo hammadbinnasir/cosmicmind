@@ -1,0 +1,6 @@
+{
+  "name": "CosmicMind",
+  "description": "Autonomous Cosmic Discovery Engine & Scientific AGI Intelligence Platform for relativistic anomalies.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
