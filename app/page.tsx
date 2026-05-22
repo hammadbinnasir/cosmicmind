@@ -44,7 +44,7 @@ export default function Page() {
   const [selectedGalaxy, setSelectedGalaxy] = useState<Galaxy | null>(GALAXIES[1]);
 
   // Global counter metrics
-  const [moneySaved, setMoneySaved] = useState<number>(104250000); // represents "Telescope Computational Cost Saved"
+  const [compHoursSaved, setCompHoursSaved] = useState<number>(14250.4); // represents "HPC Compute Hours Saved"
   const [anomaliesTracked, setAnomaliesTracked] = useState<number>(342);
   const [spectraIndexed, setSpectraIndexed] = useState<number>(4582910);
   const [activeObservers, setActiveObservers] = useState<number>(128);
@@ -76,7 +76,7 @@ export default function Page() {
 
     const interval = setInterval(() => {
       // Metrics
-      setMoneySaved(prev => prev + Math.floor(Math.random() * 450 + 100));
+      setCompHoursSaved(prev => parseFloat((prev + Math.random() * 0.4 + 0.1).toFixed(1)));
       setSpectraIndexed(prev => prev + Math.floor(Math.random() * 4 + 1));
       setAnomaliesTracked(prev => {
         if (Math.random() > 0.8) return prev + 1;
@@ -324,9 +324,9 @@ export default function Page() {
             {/* Ingest statistics panel ticker */}
             <div className="flex items-center gap-4 text-xs font-mono">
               <div className="bg-black/40 border border-white/10 px-3 py-1.5 rounded-xl">
-                <span className="text-slate-500 block text-[9px]">COMPUTATIONAL SAVINGS</span>
+                <span className="text-slate-500 block text-[9px]">COMPUTATIONAL HOURS SAVED</span>
                 <span className="text-cyan-400 font-bold block" id="money-saved-counter">
-                  ${moneySaved.toLocaleString()}
+                  {compHoursSaved.toLocaleString()} Hrs
                 </span>
               </div>
               <div className="bg-black/40 border border-white/10 px-3 py-1.5 rounded-xl">
