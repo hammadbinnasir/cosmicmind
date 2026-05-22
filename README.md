@@ -8,7 +8,7 @@
 [![Deploy with Vercel](https://vercel.com/button)](https://cosmicmind.vercel.app)
 [![Framework: Next.js](https://img.shields.io/badge/Framework-Next.js-black?style=flat-square&logo=next.js)](https://nextjs.org/)
 [![Language: TypeScript](https://img.shields.io/badge/Language-TypeScript-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
-<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/1f4f7454-af90-4cb2-991b-649ffd45ea54" />
+
 
 
 </div>
