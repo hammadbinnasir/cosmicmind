@@ -8,7 +8,7 @@
 [![Deploy with Vercel](https://vercel.com/button)](https://cosmicmind.vercel.app)
 [![Framework: Next.js](https://img.shields.io/badge/Framework-Next.js-black?style=flat-square&logo=next.js)](https://nextjs.org/)
 [![Language: TypeScript](https://img.shields.io/badge/Language-TypeScript-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
-[![AI Engine: Gemini](https://img.shields.io/badge/AI%20Engine-Google%20Gemini-orange?style=flat-square&logo=google-gemini)](https://ai.google.dev/)
+
 
 </div>
 
