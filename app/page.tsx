@@ -50,7 +50,7 @@ export default function Page() {
   const [activeObservers, setActiveObservers] = useState<number>(128);
 
   const [landingLogs, setLandingLogs] = useState<string[]>([
-    "L3 PORTAL LINK COMPLETE - 0% PKT DROPS RETRIEVED",
+    "L2 PORTAL LINK COMPLETE - 0% PKT DROPS RETRIEVED",
     "ESTABLISHING TELESCOPE CORRELATION SCHEMES ON 2.7K CMB BACKGROUND",
     "HUBBLE CO-ADD MATRICES CO-ALIGNING TARGETING CO-ORDINATES M87*"
   ]);
@@ -150,8 +150,8 @@ export default function Page() {
               <h1 className="text-sm font-bold tracking-tighter text-white uppercase italic">CosmicMind</h1>
             </div>
             <div className="flex items-center gap-6 text-[9px] font-mono tracking-wider uppercase opacity-70">
-              <span className="hidden md:inline-flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-green-500"></span> L3 Lagrange Point</span>
-              <span className="hidden sm:inline-flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-cyan-400"></span> Neural Link Active</span>
+              <span className="hidden md:inline-flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-green-500"></span> L2 Lagrange Point</span>
+              <span className="hidden sm:inline-flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-cyan-400"></span> Cognitive Ingest Link</span>
               <span className="text-white hidden xs:inline">UTC 14:22:09</span>
             </div>
             <div className="flex items-center space-x-3">
@@ -163,7 +163,7 @@ export default function Page() {
           <div className="max-w-6xl w-full text-center space-y-8 z-10 my-auto text-wrap">
             <div className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/5 border border-white/10 rounded-full text-[10px] font-mono text-gray-400 tracking-wider">
               <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
-              <span>COSMICMIND AI NEURAL LINK PIPELINE SECURED</span>
+              <span>COSMICMIND AI NEURAL INGEST PIPELINE SECURED</span>
             </div>
 
             <div className="space-y-3">
@@ -171,7 +171,7 @@ export default function Page() {
                 COSMICMIND <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">AI</span>
               </h1>
               <p className="font-sans text-xs sm:text-xs text-slate-400 max-w-2xl mx-auto leading-relaxed select-none uppercase tracking-wider">
-                Autonomous multi-spectral FITS ingestion, intelligent neural target classification & real-time cosmic event prediction pipelines. Approved for L3 orbit instrumentation sweeps.
+                Autonomous multi-spectral FITS ingestion, intelligent neural target classification & real-time cosmic event prediction pipelines. Approved for L2 orbit instrumentation sweeps.
               </p>
             </div>
 
@@ -209,7 +209,7 @@ export default function Page() {
               {landingLogs.map((log, index) => (
                 <div key={index} className={`flex items-start gap-2 text-gray-400 truncate transition-all duration-300 ${index === 0 ? 'text-emerald-400' : 'opacity-60'}`}>
                   <span className="text-gray-600 shrink-0" suppressHydrationWarning>[{new Date().toLocaleTimeString()}]</span>
-                  <span className="font-semibold shrink-0 uppercase">CORE_{index + 1}:</span>
+                  <span className="font-semibold shrink-0 uppercase">NODE_0{index + 1}:</span>
                   <p className="truncate select-none">{log}</p>
                 </div>
               ))}
@@ -316,8 +316,8 @@ export default function Page() {
 
             {/* Middle Status Line */}
             <div className="hidden lg:flex items-center space-x-6 text-[10px] font-mono tracking-widest uppercase opacity-70">
-              <div className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-green-500 animate-ping"></span> L3 Lagrange Point</div>
-              <div className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-cyan-400"></span> Neural Link Active</div>
+              <div className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-green-500 animate-ping"></span> L2 Lagrange Point</div>
+              <div className="flex items-center gap-2"><span className="w-2 h-2 rounded-full bg-cyan-400"></span> Cognitive Ingest Link</div>
               <div className="text-white">UTC 14:22:09</div>
             </div>
 
